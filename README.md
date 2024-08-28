@@ -68,7 +68,7 @@ Homyz is a modern real estate web application built with the MERN (MongoDB, Expr
 
 ## Usage
 
-- Explore property listings, customize your search, and create a user profile to list properties or access additional features.
+- Explore property listings, customize your search, and create a user profile to list properties.
 
 
 
