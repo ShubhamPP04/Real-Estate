@@ -1,0 +1,145 @@
+.btn-learn-more,
+.discover-learn-btn,
+.projects-learn-btn,
+.vision-learn-btn {
+    position: relative;
+    overflow: hidden;
+    background: var(--white);
+    border: 1.5px solid #d1d1d1;
+    border-radius: var(--border-radius-xl);
+    padding: 8px 24px;
+    font-size: 1.08rem;
+    font-weight: 500;
+    color: var(--gray-dark);
+    cursor: pointer;
+    transition: color var(--transition-medium) cubic-bezier(0.4, 0, 0.2, 1),
+                border var(--transition-fast);
+    outline: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.btn-learn-more::before,
+.discover-learn-btn::before,
+.projects-learn-btn::before,
+.vision-learn-btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--gray-dark);
+    z-index: 0;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-learn-more:hover::before,
+.discover-learn-btn:hover::before,
+.projects-learn-btn:hover::before,
+.vision-learn-btn:hover::before {
+    width: 100%;
+}
+
+.btn-learn-more:hover,
+.discover-learn-btn:hover,
+.projects-learn-btn:hover,
+.vision-learn-btn:hover {
+    color: var(--white) !important;
+    border-color: var(--gray-dark);
+}
+
+.btn-learn-more span,
+.discover-learn-btn span,
+.projects-learn-btn span,
+.vision-learn-btn span,
+.btn-learn-more svg,
+.discover-learn-btn svg,
+.projects-learn-btn svg,
+.vision-learn-btn svg {
+    z-index: 1;
+    position: relative;
+}
+
+.btn-learn-more:hover,
+.discover-learn-btn:hover,
+.projects-learn-btn:hover,
+.vision-learn-btn:hover {
+    background: var(--white);
+    transform: none !important;
+}
+
+.discover-learn-btn:hover .arrow-svg svg path,
+.projects-learn-btn:hover .arrow-svg svg path,
+.vision-learn-btn:hover .arrow-svg svg path {
+    stroke: var(--white) !important;
+}
+
+.vision-learn-btn:hover .arrow-svg svg circle {
+    fill: var(--white) !important;
+}
+
+.vision-learn-btn {
+    background: none;
+    border: none;
+    color: var(--gray-dark);
+    font-size: 1.01rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+    transition: color var(--transition-fast);
+}
+
+.vision-learn-btn:hover .vision-learn-icon svg circle {
+    fill: #333;
+}
+
+.vision-learn-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 6px;
+}
+
+.vision-learn-btn .arrow-svg {
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.vision-learn-btn span:not(.arrow-svg) {
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.vision-learn-btn:hover .arrow-svg {
+    transform: translateX(10px) scale(1.15);
+}
+
+.vision-learn-btn:hover span:not(.arrow-svg) {
+    transform: translateX(6px);
+    opacity: 0.85;
+}
+
+.contact-submit-btn {
+    margin-top: 1.5rem;
+    background: var(--gray-dark);
+    color: var(--white);
+    font-size: 1.08rem;
+    font-weight: 400;
+    border: none;
+    border-radius: var(--border-radius-xl);
+    padding: 0.9rem 2.5rem;
+    cursor: pointer;
+    transition: background var(--transition-fast);
+    letter-spacing: 0.5px;
+}
+
+.contact-submit-btn:hover {
+    background: #444;
+}
